@@ -1,5 +1,4 @@
 
-
 class Adapter:
 	avaliable_adapters = {
 		'sqlite':'sqlite3',
@@ -42,3 +41,4 @@ class SqliteAdapter(Adapter):
 	
 	def connect(self, database, **kwargs):
 		return self.sqlite.connect(database, **kwargs)
+		
